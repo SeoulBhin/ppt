@@ -514,9 +514,6 @@ class Presentation{
 }
 const pres=new Presentation();pres._activateReveals(0);
 
-fetch('backup/screenshots/skill-version.png').then(r=>r.blob()).then(b=>{
-  const reader=new FileReader();reader.onload=()=>{document.getElementById('img-skill').src=reader.result};reader.readAsDataURL(b);
-}).catch(()=>{});
 </script>
 </body>
 </html>
